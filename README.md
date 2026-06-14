@@ -9,6 +9,8 @@ This notebook trains an LSTM + CTC model on the CROHME 2019 online handwriting d
 Refer to this for basic information of what will be implementing in this notebook. [[link](https://www.youtube.com/watch?v=aD3X1ils4J4)]
 
 This notebook focuses on the implementation contract, expected tensor shapes, formulas, checks, and grading requirements.
+## Kaggle Notebook
+[complete kaggle notebook](https://www.kaggle.com/code/nhanngt/crohme-ctc-pytorch-project/notebook)
 
 ## Resources
 
@@ -132,8 +134,3 @@ checkpoint = torch.load(best_checkpoint_path, map_location=device)
 train_model.load_state_dict(checkpoint["model_state_dict"])
 optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
 ```
-
-
-## Kaggle Notebook
-
-https://www.kaggle.com/code/nhanngt/crohme-ctc-pytorch-project/notebook
